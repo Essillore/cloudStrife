@@ -32,7 +32,7 @@ public class CameraLookAround : MonoBehaviour
         rotationX += mouseY * -1 * sensitivity;
 
 
-        //rotationY = Mathf.Clamp(rotationY, 0f, 88f);
+        rotationX = Mathf.Clamp(rotationY, 0f, 88f);
 
         Quaternion QT = Quaternion.Euler(rotationX, rotationY, 0f);
         transform.rotation = Quaternion.Lerp(transform.rotation, QT, Time.deltaTime * orbitDamping);
