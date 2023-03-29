@@ -7,23 +7,40 @@ public class SideCannon : MonoBehaviour
 {
     public GameObject sideProjectilePrefab;
     public float projectileSpeed = 1000f;
-    public Camera myCamera;
 
+    public float abilityCooldown;
+    private bool canFire = true;
+
+
+
+    void Start()
+    {
+        canFire = true;    
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+
+        if (Input.GetButtonDown("Fire2") && canFire==true)
         {
+            canFire = false;
             GameObject projectile = Instantiate(sideProjectilePrefab, transform.position, transform.rotation);
             projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
+
+            StartCoroutine(Cooldown());
 
             /*if (hit.transform.CompareTag("Enemy"))
             {
                 Destroy(hit.transform.gameObject);
             }
             */
-        }
 
+        }
+    }
+    IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(abilityCooldown);
+        canFire = true;
     }
 
 }
