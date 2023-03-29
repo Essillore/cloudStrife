@@ -22,46 +22,64 @@ namespace PathCreation.Utility {
             return original;
         }
 
-        public static Vector3 TransformPoint (Vector3 p, Transform t, PathSpace space) {
-            var original = LockTransformToSpace (t, space);
+        public static Vector3 TransformPoint(Vector3 p, Transform t, PathSpace space)
+        {
+            /*var original = LockTransformToSpace (t, space);
             Vector3 transformedPoint = t.TransformPoint (p);
             original.SetTransform (t);
-            return transformedPoint;
+            return transformedPoint;*/
+
+            return t.TransformPoint(p);
         }
 
-        public static Vector3 InverseTransformPoint (Vector3 p, Transform t, PathSpace space) {
-            var original = LockTransformToSpace (t, space);
+        public static Vector3 InverseTransformPoint(Vector3 p, Transform t, PathSpace space)
+        {
+            /*var original = LockTransformToSpace (t, space);
             Vector3 transformedPoint = t.InverseTransformPoint (p);
             original.SetTransform (t);
-            return transformedPoint;
+            return transformedPoint;*/
+
+            return t.InverseTransformPoint(p);
         }
 
-        public static Vector3 TransformVector (Vector3 p, Transform t, PathSpace space) {
-            var original = LockTransformToSpace (t, space);
+        public static Vector3 TransformVector(Vector3 p, Transform t, PathSpace space)
+        {
+            /*var original = LockTransformToSpace (t, space);
             Vector3 transformedPoint = t.TransformVector (p);
             original.SetTransform (t);
-            return transformedPoint;
+            return transformedPoint;*/
+
+            return t.TransformVector(p);
         }
 
-        public static Vector3 InverseTransformVector (Vector3 p, Transform t, PathSpace space) {
-            var original = LockTransformToSpace (t, space);
+        public static Vector3 InverseTransformVector(Vector3 p, Transform t, PathSpace space)
+        {
+            /*var original = LockTransformToSpace (t, space);
             Vector3 transformedPoint = t.InverseTransformVector (p);
             original.SetTransform (t);
-            return transformedPoint;
+            return transformedPoint;*/
+
+            return t.InverseTransformVector(p);
         }
 
-        public static Vector3 TransformDirection (Vector3 p, Transform t, PathSpace space) {
-            var original = LockTransformToSpace (t, space);
+        public static Vector3 TransformDirection(Vector3 p, Transform t, PathSpace space)
+        {
+            /*var original = LockTransformToSpace (t, space);
             Vector3 transformedPoint = t.TransformDirection (p);
             original.SetTransform (t);
-            return transformedPoint;
+            return transformedPoint;*/
+
+            return t.TransformDirection(p);
         }
 
-        public static Vector3 InverseTransformDirection (Vector3 p, Transform t, PathSpace space) {
-            var original = LockTransformToSpace (t, space);
+        public static Vector3 InverseTransformDirection(Vector3 p, Transform t, PathSpace space)
+        {
+            /*var original = LockTransformToSpace (t, space);
             Vector3 transformedPoint = t.InverseTransformDirection (p);
             original.SetTransform (t);
-            return transformedPoint;
+            return transformedPoint;*/
+
+            return t.InverseTransformDirection(p);
         }
 
         public static bool LineSegmentsIntersect (Vector2 a1, Vector2 a2, Vector2 b1, Vector2 b2) {
