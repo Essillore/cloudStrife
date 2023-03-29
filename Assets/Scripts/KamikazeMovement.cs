@@ -46,7 +46,8 @@ public class KamikazeMovement : MonoBehaviour
                 directionToPlayer.Normalize();
 
                 // Move the enemy in the direction of the player
-                enemyTransform.position = Vector3.MoveTowards(enemyTransform.position, playerTransform.position, enemySpeed * Time.deltaTime / 10f);
+            //    enemyTransform.position = Vector3.MoveTowards(enemyTransform.position, playerTransform.position, enemySpeed * Time.deltaTime / 10f);
+                enemyTransform.position += Vector3.forward * enemySpeed * Time.deltaTime;
             }
 
             // Reset the distance check timer
