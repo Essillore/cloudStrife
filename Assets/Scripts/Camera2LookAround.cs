@@ -37,7 +37,7 @@ public class Camera2LookAround : MonoBehaviour
 
         rotationY += mouseX * sensitivity;
         rotationX += mouseY * -1 * sensitivity;
-        rotationX = Mathf.Clamp(rotationX, -30f, 30f);
+        rotationX = Mathf.Clamp(rotationX, -50f, 50f);
 
         // Calculate the position of the camera in a circular motion around the airship
         Vector3 cameraPosition = new Vector3(

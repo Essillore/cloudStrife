@@ -11,6 +11,8 @@ public class CannonMouseaim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+     //   Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.yellow);
+
         if (Input.GetButtonDown("Fire1"))
         {
             Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
@@ -19,6 +21,9 @@ public class CannonMouseaim : MonoBehaviour
             {
                 transform.LookAt(hit.point);
             }
+
+
+
             GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
             projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
             
