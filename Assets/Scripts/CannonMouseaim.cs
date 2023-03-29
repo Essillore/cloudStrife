@@ -18,10 +18,10 @@ public class CannonMouseaim : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 transform.LookAt(hit.point);
-            
+            }
             GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
             projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
-            }
+            
             /*if (hit.transform.CompareTag("Enemy"))
             {
                 Destroy(hit.transform.gameObject);

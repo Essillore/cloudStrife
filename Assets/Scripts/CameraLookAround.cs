@@ -15,8 +15,8 @@ public class CameraLookAround : MonoBehaviour
     public float distance = 10f;
     public float rotationSpeed = 10f;
 
-    public float maxVerticalAngle = 80f;
-    public float minVerticalAngle = -80f;
+    public float maxVerticalAngle = 360f;
+    public float minVerticalAngle = -360f;
 
     public float movementSmoothing = 0.1f;
 
@@ -32,7 +32,7 @@ public class CameraLookAround : MonoBehaviour
         rotationX += mouseY * -1 * sensitivity;
 
 
-        rotationX = Mathf.Clamp(rotationY, 0f, 88f);
+        //rotationX = Mathf.Clamp(rotationY, 0f, 88f);
 
         Quaternion QT = Quaternion.Euler(rotationX, rotationY, 0f);
         transform.rotation = Quaternion.Lerp(transform.rotation, QT, Time.deltaTime * orbitDamping);
@@ -55,7 +55,7 @@ public class CameraLookAround : MonoBehaviour
         //transform.position = cameraPosition;
 
         // Smooth camera movement towards target position
-       // transform.position = Vector3.Lerp(transform.position - transform.forward, cameraTargetPosition, movementSmoothing);
+        // transform.position = Vector3.Lerp(transform.position - transform.forward, cameraTargetPosition, movementSmoothing);
 
         transform.position = target.position - transform.forward * distance;
 
