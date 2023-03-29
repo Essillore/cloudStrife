@@ -11,6 +11,8 @@ public class Spire : MonoBehaviour
     public bool broken = false;
     public bool seeded = false;
 
+    public bool healing = false;
+
     bool timerOnStream = false;
     float timerOnStreamTime = 5f;
 
@@ -31,10 +33,10 @@ public class Spire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("g"))
         {
-            if (unbroken == true) { spireHealth -= 10f; }
-            if (broken == true) { ChangeSpireState(); }
+           // if (unbroken == true) { spireHealth -= 10f; }
+            if (broken == true) { PlantSeed(); }
         }
 
         if (timerOnStream == true)  // this countdowns for stopped particles to end, before complete deactivation for ribbons
@@ -87,6 +89,22 @@ public class Spire : MonoBehaviour
         {
 
         }
+    }
+    public void TakeDamage(int amount)
+    {
+        spireHealth -= amount;
+
+       /* if (currentHealth <= 0)
+        {
+            //deathAnimation
+            Destroy(gameObject);
+        }*/
+    }
+
+    public void PlantSeed()
+    {
+        if (healing == true)
+        { ChangeSpireState(); }
     }
 
 }

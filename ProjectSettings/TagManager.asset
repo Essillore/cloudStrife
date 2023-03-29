@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Spire
+  - StaticSpire
+  - HealingRecharge
   layers:
   - Default
   - TransparentFX
