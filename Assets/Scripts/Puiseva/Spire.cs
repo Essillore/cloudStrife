@@ -10,6 +10,7 @@ public class Spire : MonoBehaviour
     public bool unbroken = true;
     public bool broken = false;
     public bool seeded = false;
+    public bool cherryTree = false;
 
     public bool healing = false;
 
@@ -21,13 +22,17 @@ public class Spire : MonoBehaviour
     public GameObject unBrokenMesh; // intact spire model
     public GameObject brokenMesh; // broken spire model
     public GameObject treeMesh; // tree model
+    public GameObject cherryTreeMesh;
+    public GameObject cherryTreeParticles;
     public GameObject aetherExplosionParticles; // aether explosion on break
     public GameObject aetherStreamParticles; // aether stream while broken and unseeded
     public GameObject rechargeColliderObject; // object to hold capsule collider for health recharge area
+
+    GameObject playerObject;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerObject = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -81,6 +86,7 @@ public class Spire : MonoBehaviour
             rechargeColliderObject.SetActive(false);
             treeMesh.SetActive(true);
             healing = false;
+            playerObject.GetComponent<PlayerHealth>().activelyHealing = false;
             // change state
             broken = false;
             seeded = true;
