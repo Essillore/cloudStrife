@@ -11,7 +11,7 @@ public class BigEnemy : MonoBehaviour
 
     public float enemySpeed = 0f;
 
-    public float aggroRange = 200f;
+    public float aggroRange = 100f;
     bool playerNear = false;
     bool canSpawn = true;
 
@@ -27,7 +27,7 @@ public class BigEnemy : MonoBehaviour
     IEnumerator whenSpawn()
     {
         yield return new WaitForSeconds(spawnTimer);
-        spawnTimer = Random.Range(3, 7);
+        spawnTimer = Random.Range(7, 15);
         canSpawn = true;
     }
 
