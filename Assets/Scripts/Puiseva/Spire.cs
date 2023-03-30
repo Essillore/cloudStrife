@@ -27,6 +27,8 @@ public class Spire : MonoBehaviour
     public GameObject aetherExplosionParticles; // aether explosion on break
     public GameObject aetherStreamParticles; // aether stream while broken and unseeded
     public GameObject rechargeColliderObject; // object to hold capsule collider for health recharge area
+    public GameObject treeSpawnParticles;
+    public GameObject cherryTreeSpawnParticles;
 
     GameObject playerObject;
     // Start is called before the first frame update
@@ -86,11 +88,15 @@ public class Spire : MonoBehaviour
             // aetherStreamParticles.GetComponentInChildren<ParticleSystem>().Stop();
             rechargeColliderObject.SetActive(false);
             if (cherryTree == true)
-            { cherryTreeMesh.SetActive(true);
+            { cherryTreeMesh.SetActive(true);  
+                cherryTreeSpawnParticles.SetActive(true);
                 cherryTreeParticles.SetActive(true);
             }
-            else { treeMesh.SetActive(true); }
+            else { treeMesh.SetActive(true);
+                treeSpawnParticles.SetActive(true);
+            }
             healing = false;
+
             playerObject.GetComponent<PlayerHealth>().activelyHealing = false;
             playerObject.GetComponent<PlayerHealth>().seededSpires++;
             // change state
