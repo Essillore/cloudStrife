@@ -16,12 +16,18 @@ public class CannonMouseaim : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && playerHealth.currentHealth > 1)
         {
+            int layerMask = 1 << 7;
             Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+            Vector3 direction = ray.direction;
+
+            /*if (Physics.Raycast(ray, out hit, Mathf.Infinity,layerMask))
             {
                 transform.LookAt(hit.point);
-            }
+            }*/
+            Quaternion rotation = Quaternion.LookRotation(direction);
+            transform.rotation = rotation;
 
             playerHealth.TakeDamage(1);
 
