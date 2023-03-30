@@ -69,6 +69,7 @@ public class Spire : MonoBehaviour
             aetherExplosionParticles.SetActive(true);
             aetherStreamParticles.SetActive(true);
             rechargeColliderObject.SetActive(true);
+            playerObject.GetComponent<PlayerHealth>().destroyedSpires++;
             // change state
             unbroken = false;
             broken = true;
