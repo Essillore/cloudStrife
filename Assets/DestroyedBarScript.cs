@@ -20,6 +20,6 @@ public class DestroyedBarScript : MonoBehaviour
     void Update()
     {
         destroyedSpires = playerHealthObject.GetComponent<PlayerHealth>().destroyedSpires;
-        image.sizeDelta = new Vector2((1000 / 17) * destroyedSpires, 20);
+        image.sizeDelta = new Vector2((1000 / 18) * destroyedSpires, 20);
     }
 }

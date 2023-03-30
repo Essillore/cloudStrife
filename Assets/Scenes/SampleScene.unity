@@ -14444,6 +14444,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2641223825174224386, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+      propertyPath: gameUI
+      value: 
+      objectReference: {fileID: 1329347299}
+    - target: {fileID: 2641223825174224386, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 1649738762}
+    - target: {fileID: 2641223825174224386, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+      propertyPath: endingScreen
+      value: 
+      objectReference: {fileID: 1458569935}
     - target: {fileID: 3334926818218202613, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
       propertyPath: m_Name
       value: PlayerHolder
