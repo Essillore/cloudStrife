@@ -16,16 +16,16 @@ public class HealingRecharge : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.transform.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
             {
             GetComponentInParent<Spire>().healing = true;
         }
 
     }
-    private void OnCollisionExit(Collision collision)
-    { if (collision.transform.CompareTag("Player"))
+    private void OnTriggerExit(Collider collision)
+    { if (collision.CompareTag("Player"))
         { GetComponentInParent<Spire>().healing = false; }
     }
 }

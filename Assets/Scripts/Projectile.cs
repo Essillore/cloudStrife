@@ -23,9 +23,22 @@ public class Projectile : MonoBehaviour
                 }
                 Destroy(gameObject);
             }
-        }
-    private void OnCollisionEnter(Collision other)
+            else if (other.transform.CompareTag("Spire"))
+            {
+            Debug.Log("has damaged spire");
+
+            Spire spire = other.transform.GetComponent<Spire>();
+            if (other.transform.GetComponent<Spire>().spireHealth > 0)
+            {
+                spire.TakeDamage(damage);
+            }
+            // Destroy(gameObject);
+         }
+        
+        
+    /*private void OnCollisionEnter(Collision other)
     {
+        print("Hit something!");
         if (other.transform.CompareTag("Spire"))
         {
             Debug.Log("has damaged spire");
@@ -36,7 +49,7 @@ public class Projectile : MonoBehaviour
                  spire.TakeDamage(damage); 
             }
             // Destroy(gameObject);
-        }
+        }*/
     }
 
 

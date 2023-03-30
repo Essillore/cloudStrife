@@ -48,7 +48,7 @@ public class Spire : MonoBehaviour
             timerOnStreamTime -= Time.deltaTime;
         }
 
-        if (unbroken == true && spireHealth < 0f)
+        if (unbroken == true && spireHealth <= 0f)
         {
             ChangeSpireState();
         }
