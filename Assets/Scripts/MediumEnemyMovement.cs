@@ -7,13 +7,23 @@ public class MediumEnemyMovement : MonoBehaviour
     // Private variable to store a reference to the player's transform component
     private Transform playerTransform;
 
-    public float enemySpeed = 1000f;
+    public float enemySpeed = 20f;
 
     public float aggroRange = 100f;
+    public float shootRange = 30;
     bool chasingPlayer = false;
+    public float distanceToPlayer;
 
     // Set a timer for the distance check
     float distanceCheckTimer = 0.5f;
+
+    public GameObject enemyBulletPrefab;
+    public float bulletSpeed = 1000;
+
+    public bool enemyCanFire = true;
+    public float enemyShootCD = 1;
+    public GameObject enemyCannonLocation;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +45,7 @@ public class MediumEnemyMovement : MonoBehaviour
             Vector3 directionToPlayer = playerTransform.position - enemyTransform.position;
 
             // Calculate the distance between the enemy and the player
-            float distanceToPlayer = directionToPlayer.magnitude;
+            distanceToPlayer = directionToPlayer.magnitude;
 
             // Check if the distance to the player is less than 100
             if (distanceToPlayer < aggroRange)
@@ -45,6 +55,7 @@ public class MediumEnemyMovement : MonoBehaviour
                 // Normalize the direction vector to get a unit vector
                 directionToPlayer.Normalize();
             }
+
             else
             {
                 chasingPlayer = false;
@@ -61,7 +72,39 @@ public class MediumEnemyMovement : MonoBehaviour
 
             // Move the enemy in the direction of the player
             this.transform.position = Vector3.MoveTowards(this.transform.position, playerTransform.position, enemySpeed * Time.deltaTime / 10f);
+
+            if (distanceToPlayer <= shootRange)
+            {
+                this.transform.position = this.transform.position;
+
+                if (enemyCanFire == true)
+                {
+                    Shoot();
+                    StartCoroutine(Cooldown());
+                    enemyCanFire = false;
+
+                }
+            }
         }
+    }
+
+    IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(enemyShootCD);
+        enemyCanFire = true;
+    }
+
+
+
+
+        
+
+public void Shoot()
+    {
+        print("Shoot");
+
+        GameObject enemyBullet = Instantiate(enemyBulletPrefab, enemyCannonLocation.transform.position, enemyCannonLocation.transform.rotation);
+        enemyBullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
     }
 
     private void OnTriggerEnter(Collider other)
