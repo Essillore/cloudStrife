@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float playerSpeed = 3f;
-    public float rotateSpeed = 10f;
+    public float playerSpeed = 15f;
+    public float playerVerticalSpeed = 10f;
+    public float rotateSpeed = 30f;
     public float horizontal;
     public float vertical;
     public float depth;
@@ -28,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         depth = Input.GetAxis("Depth");
-        transform.Translate( new Vector3(0, playerSpeed * Time.deltaTime * vertical, playerSpeed * Time.deltaTime * depth));
+        transform.Translate( new Vector3(0, playerVerticalSpeed * Time.deltaTime * vertical, playerSpeed * Time.deltaTime * depth));
 
         transform.Rotate(Vector3.up, horizontal * rotateSpeed * Time.deltaTime);
 

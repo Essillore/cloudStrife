@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d2d606ac25cae4cb44d979e960f8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 100
+  enemySpeed: 80
   aggroRange: 200
 --- !u!1001 &1422651776608705884
 PrefabInstance:
