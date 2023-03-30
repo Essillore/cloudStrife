@@ -10,6 +10,7 @@ public class KamikazeMovement : MonoBehaviour
     public float enemySpeed = 1000f;
 
     public float aggroRange = 100f;
+    bool chasingPlayer = false;
 
     // Set a timer for the distance check
     float distanceCheckTimer = 0.5f;
@@ -39,19 +40,27 @@ public class KamikazeMovement : MonoBehaviour
             // Check if the distance to the player is less than 100
             if (distanceToPlayer < aggroRange)
             {
-                // Face towards the player
-                enemyTransform.LookAt(playerTransform);
+                chasingPlayer = true;
 
                 // Normalize the direction vector to get a unit vector
                 directionToPlayer.Normalize();
-
-                // Move the enemy in the direction of the player
-            //    enemyTransform.position = Vector3.MoveTowards(enemyTransform.position, playerTransform.position, enemySpeed * Time.deltaTime / 10f);
-                enemyTransform.position += Vector3.forward * enemySpeed * Time.deltaTime;
+            }
+            else
+            {
+                chasingPlayer = false;
             }
 
             // Reset the distance check timer
             distanceCheckTimer = 0.5f;
+        }
+
+        if (chasingPlayer)
+        {
+            // Face towards the player
+            this.transform.LookAt(playerTransform);
+
+            // Move the enemy in the direction of the player
+            this.transform.position = Vector3.MoveTowards(this.transform.position, playerTransform.position, enemySpeed * Time.deltaTime / 10f);
         }
     }
 
