@@ -21,11 +21,22 @@ public class HealingRecharge : MonoBehaviour
         if (collision.CompareTag("Player"))
             {
             GetComponentInParent<Spire>().healing = true;
+            collision.GetComponent<PlayerHealth>().activelyHealing = true;
         }
 
     }
     private void OnTriggerExit(Collider collision)
     { if (collision.CompareTag("Player"))
-        { GetComponentInParent<Spire>().healing = false; }
+        { GetComponentInParent<Spire>().healing = false;
+            collision.GetComponent<PlayerHealth>().activelyHealing = false;
+        }
+    }
+
+    private void OnTriggerStay(Collider collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.GetComponent<PlayerHealth>().activelyHealing = true;
+        }
     }
 }
