@@ -80,6 +80,7 @@ public class Spire : MonoBehaviour
             // aetherStreamParticles.GetComponentInChildren<ParticleSystem>().Stop();
             rechargeColliderObject.SetActive(false);
             treeMesh.SetActive(true);
+            healing = false;
             // change state
             broken = false;
             seeded = true;
