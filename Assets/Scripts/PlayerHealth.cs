@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 1000;
     public int currentHealth;
     public bool activelyHealing;
+    public int seededSpires = 0;
 
     // Start is called before the first frame update
     void Start()

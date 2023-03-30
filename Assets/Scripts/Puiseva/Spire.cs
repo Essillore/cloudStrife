@@ -91,6 +91,7 @@ public class Spire : MonoBehaviour
             else { treeMesh.SetActive(true); }
             healing = false;
             playerObject.GetComponent<PlayerHealth>().activelyHealing = false;
+            playerObject.GetComponent<PlayerHealth>().seededSpires++;
             // change state
             broken = false;
             seeded = true;
