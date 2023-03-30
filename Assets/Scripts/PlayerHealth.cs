@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (activelyHealing == true)
         {
-            Heal(5);
+            Heal(1);
         }
     }
 
