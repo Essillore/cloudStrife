@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4276366310414704791}
   m_Layer: 0
-  m_Name: Floating AetherOrb
+  m_Name: Floating AetherOrb_PE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
