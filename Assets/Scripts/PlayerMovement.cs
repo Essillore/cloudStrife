@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         depth = Input.GetAxis("Depth");
@@ -29,4 +33,11 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(Vector3.up, horizontal * rotateSpeed * Time.deltaTime);
 
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
 }

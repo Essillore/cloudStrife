@@ -23,6 +23,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public bool activelyHealing;
+
+    public void FixedUpdate()
+    {
+        if (activelyHealing == true)
+        {
+            Heal(1);
+        }
+    }
+
     public void Heal (int amount)
     {
         currentHealth += amount;
@@ -32,5 +42,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
+
+
 
 }
