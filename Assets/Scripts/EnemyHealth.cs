@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Explosion
-            Destroy(gameObject);
+            Destroy(transform.root.gameObject);
         }
     }
 
