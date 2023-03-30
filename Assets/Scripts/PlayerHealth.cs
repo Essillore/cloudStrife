@@ -10,6 +10,10 @@ public class PlayerHealth : MonoBehaviour
     public int seededSpires = 0;
     public int destroyedSpires = 0;
 
+    GameObject endingScreen;
+    GameObject winScreen;
+    GameObject gameUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +27,17 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             //we're dead
+            gameUI.SetActive(false);
+            endingScreen.SetActive(true);
+            //spawn death explosion here, before destroying
+
             Destroy(transform.root.gameObject);
+        }
+
+        if (seededSpires >= 17)
+        {
+            gameUI.SetActive(false);
+            winScreen.SetActive(true);
         }
     }
 
@@ -35,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Heal(1);
         }
+        
     }
 
     public void Heal (int amount)
