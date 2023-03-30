@@ -20,6 +20,6 @@ public class CompletionBarScript : MonoBehaviour
     void Update()
     {
         seededSpires = playerHealthObject.GetComponent<PlayerHealth>().seededSpires;
-        image.sizeDelta = new Vector2((1000 / 17) * seededSpires, 20);
+        image.sizeDelta = new Vector2((1000 / 18) * seededSpires, 20);
     }
 }

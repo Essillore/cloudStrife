@@ -10,9 +10,9 @@ public class PlayerHealth : MonoBehaviour
     public int seededSpires = 0;
     public int destroyedSpires = 0;
 
-    GameObject endingScreen;
-    GameObject winScreen;
-    GameObject gameUI;
+    public GameObject endingScreen;
+    public GameObject winScreen;
+    public GameObject gameUI;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +34,7 @@ public class PlayerHealth : MonoBehaviour
             Destroy(transform.root.gameObject);
         }
 
-        if (seededSpires >= 17)
-        {
-            gameUI.SetActive(false);
-            winScreen.SetActive(true);
-        }
+
     }
 
 
@@ -49,8 +45,22 @@ public class PlayerHealth : MonoBehaviour
         {
             Heal(1);
         }
-        
+                if (seededSpires >= 18)
+        {
+            gameUI.SetActive(false);
+            winScreen.SetActive(true);
+        }
     }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown("k"))
+        {
+            // if (unbroken == true) { spireHealth -= 10f; }
+            seededSpires = 18;
+        }
+    }
+
 
     public void Heal (int amount)
     {
