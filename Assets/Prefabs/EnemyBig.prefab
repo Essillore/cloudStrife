@@ -121,7 +121,7 @@ PrefabInstance:
     - target: {fileID: -2263244834191155064, guid: a080bee438f0e174c92437e46266558f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 712a33ca37444af41a5f95d8e8fb171d, type: 2}
+      objectReference: {fileID: 2100000, guid: e53e1ccaebd95604397023113c896056, type: 2}
     - target: {fileID: 919132149155446097, guid: a080bee438f0e174c92437e46266558f, type: 3}
       propertyPath: m_Name
       value: cs_zeppelin
