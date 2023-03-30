@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ebd4c88d2076b4ca6451d3cf13fdd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 80
   currentHealth: 0
 --- !u!54 &5227551205222046452
 Rigidbody:
@@ -91,8 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d2d606ac25cae4cb44d979e960f8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 200
-  aggroRange: 100
+  enemySpeed: 100
+  aggroRange: 200
 --- !u!1001 &1422651776608705884
 PrefabInstance:
   m_ObjectHideFlags: 0
