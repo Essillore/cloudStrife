@@ -23,6 +23,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public bool activelyHealing;
+
+    public void FixedUpdate()
+    {
+        if (activelyHealing == true)
+        {
+            Heal(5);
+        }
+    }
+
     public void Heal (int amount)
     {
         currentHealth += amount;
