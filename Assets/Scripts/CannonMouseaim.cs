@@ -18,7 +18,7 @@ public class CannonMouseaim : MonoBehaviour
         {
             int layerMask = 1 << 7;
             Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            // RaycastHit hit;
 
             Vector3 direction = ray.direction;
 
