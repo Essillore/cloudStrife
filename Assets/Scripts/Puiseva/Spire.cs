@@ -84,7 +84,11 @@ public class Spire : MonoBehaviour
 
             // aetherStreamParticles.GetComponentInChildren<ParticleSystem>().Stop();
             rechargeColliderObject.SetActive(false);
-            treeMesh.SetActive(true);
+            if (cherryTree == true)
+            { cherryTreeMesh.SetActive(true);
+                cherryTreeParticles.SetActive(true);
+            }
+            else { treeMesh.SetActive(true); }
             healing = false;
             playerObject.GetComponent<PlayerHealth>().activelyHealing = false;
             // change state
