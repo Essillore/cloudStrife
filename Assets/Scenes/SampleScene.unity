@@ -1679,8 +1679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf794cca52a1ac64ca65a3cd8bf049cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealthObject: {fileID: 0}
-  completionBarObject: {fileID: 0}
+  playerHealthObject: {fileID: 1605321509}
+  completionBarObject: {fileID: 233139759}
 --- !u!114 &233139762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2372,8 +2372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f5a19d901bfa48a622f7fa1b6b883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealthObject: {fileID: 0}
-  healthBarObject: {fileID: 0}
+  playerHealthObject: {fileID: 1605321509}
+  healthBarObject: {fileID: 331622603}
 --- !u!114 &331622606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10052,6 +10052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc429b087386224782894daccb60e71, type: 3}
+--- !u!1 &1605321509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 598558578384560231, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+  m_PrefabInstance: {fileID: 3334926819436244464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1610257316
 PrefabInstance:
   m_ObjectHideFlags: 0
