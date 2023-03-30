@@ -15,6 +15,9 @@ public class KamikazeMovement : MonoBehaviour
     // Set a timer for the distance check
     float distanceCheckTimer = 0.5f;
 
+    int kamikazeDamage = 30;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +74,7 @@ public class KamikazeMovement : MonoBehaviour
             PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(50);
+                playerHealth.TakeDamage(kamikazeDamage);
 
                 Destroy(gameObject);
             }
