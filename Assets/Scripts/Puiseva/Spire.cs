@@ -40,7 +40,7 @@ public class Spire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("g"))
+        if (Input.GetKeyDown("f"))
         {
            // if (unbroken == true) { spireHealth -= 10f; }
             if (broken == true) { PlantSeed(); }
