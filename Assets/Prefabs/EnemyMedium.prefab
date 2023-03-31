@@ -295,6 +295,10 @@ PrefabInstance:
       value: EnemyCollider
       objectReference: {fileID: 0}
     - target: {fileID: 1038874718800619081, guid: 12adb441ff7d4c34998b7350b14f5d46, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038874718800619081, guid: 12adb441ff7d4c34998b7350b14f5d46, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}

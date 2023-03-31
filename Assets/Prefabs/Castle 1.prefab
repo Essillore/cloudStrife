@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3462942685416554357}
   - component: {fileID: 3462942685416554358}
   - component: {fileID: 3462942685416554359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 3462942685590902374}
   - component: {fileID: 3462942685590902375}
   - component: {fileID: 3462942685590902368}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3462942685778047118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,6 +257,10 @@ PrefabInstance:
     - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_Name
       value: tower_big_nodecoration (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
@@ -327,6 +331,10 @@ PrefabInstance:
     - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_Name
       value: tower_small (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7508885014792716515, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_RootOrder
@@ -405,6 +413,10 @@ PrefabInstance:
     - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_Name
       value: tower_big_nodecoration (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
@@ -520,6 +532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_big (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
 --- !u!4 &2385941849174099984 stripped
@@ -541,6 +557,10 @@ PrefabInstance:
     - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_Name
       value: tower_big_nodecoration (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
@@ -615,6 +635,10 @@ PrefabInstance:
     - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_Name
       value: tower_big_nodecoration (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
@@ -730,6 +754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_big (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
 --- !u!4 &302907115679331020 stripped
@@ -751,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_Name
       value: tower_big_nodecoration (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
@@ -826,6 +858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_big_nodecoration (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -895,6 +931,10 @@ PrefabInstance:
     - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_Name
       value: tower_small (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7508885014792716515, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_RootOrder
@@ -969,6 +1009,10 @@ PrefabInstance:
     - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_Name
       value: tower_small (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7508885014792716515, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_RootOrder
@@ -1048,6 +1092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_big_nodecoration (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1121,6 +1169,10 @@ PrefabInstance:
     - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_Name
       value: tower_big_nodecoration
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352476035524635416, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3165604825490583970, guid: 7890ee1fd9d8e1847bcdf1c0b4e97fc4, type: 3}
       propertyPath: m_RootOrder
@@ -1236,6 +1288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_big (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
 --- !u!4 &5827924765148728538 stripped
@@ -1253,6 +1309,10 @@ PrefabInstance:
     - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_Name
       value: tower_small (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169514619433196121, guid: cbc429b087386224782894daccb60e71, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7508885014792716515, guid: cbc429b087386224782894daccb60e71, type: 3}
       propertyPath: m_RootOrder
@@ -1371,6 +1431,10 @@ PrefabInstance:
     - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
       propertyPath: m_Name
       value: tower_big (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5227551205222046452}
   - component: {fileID: 5227551205222046455}
   - component: {fileID: 5152083569192536277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyKamikaze
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -79,8 +79,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.65133214, y: 0.43253326, z: 1}
-  m_Center: {x: 0.0019223243, y: -0.025258064, z: 0}
+  m_Size: {x: 0.65133214, y: 1.0836315, z: 1.9348297}
+  m_Center: {x: 0.0019223094, y: 0.1721201, z: -0.08644104}
 --- !u!114 &5152083569192536277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,9 +174,29 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: 0aa86a45411de1f498cb8945b764c299, type: 2}
+    - target: {fileID: 901897122485332503, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}
       propertyPath: m_Name
       value: EnemyGlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769484663829117588, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846231508536536994, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982997731194620478, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe62a9a568bd8946af6502b47cf5dc9, type: 3}

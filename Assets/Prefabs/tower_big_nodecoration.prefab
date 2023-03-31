@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3641499201981531304}
   - component: {fileID: 1544105145508999266}
   - component: {fileID: 3166188633357654261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tower_big_nodecoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}

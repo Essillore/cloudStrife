@@ -1280,6 +1280,10 @@ PrefabInstance:
       value: tower_big
       objectReference: {fileID: 0}
     - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571484300569723747, guid: b22a7556d75ddd7438b6b2547249e065, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
