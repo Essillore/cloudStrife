@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject sideCannonObjectRight;
     public GameObject sideCannonObjectLeft;
 
+    public AudioClip pickUp;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -81,6 +83,31 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("StaticSpire"))
+        {
+            print("Yes");
+           // PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            if (currentHealth < 1000)
+            {
+                GetComponent<AudioSource>().PlayOneShot(pickUp, 0.5f);
+
+                Heal(other.GetComponent<AetherOrb>().healAmount);
+                /*if (other.gameObject.transform.parent != null)
+                {
+                    // Keep destroying parents until there are no more left
+                    Transform parentTransform = other.gameObject.transform.parent;
+                    while (parentTransform != null)
+                    {
+                        Destroy(parentTransform.gameObject);
+                        parentTransform = parentTransform.parent;
+                    }
+                }*/
+                Destroy(other.gameObject.transform.parent.gameObject);
+                //Destroy(other.gameObject);
+            }
+        }
+    }
 
 }

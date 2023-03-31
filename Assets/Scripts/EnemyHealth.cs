@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
             //PickUp
             Instantiate(pickUp, transform.position, transform.rotation);
 
-            Destroy(transform.root.gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
 

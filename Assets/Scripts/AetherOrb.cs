@@ -23,19 +23,19 @@ public class AetherOrb : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+  /*  private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
-            if (other.GetComponent<PlayerHealth>().currentHealth > 0)
+            if (playerHealth.currentHealth < 1000)
             {
-                audioSource.PlayOneShot(pickUp, 0.5F);
+                audioSource.PlayOneShot(pickUp, 0.5f);
 
                 playerHealth.Heal(healAmount);
                 Destroy(transform.root.gameObject);
             }
         }
-    }
+    }*/
 
 }
