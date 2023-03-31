@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float vertical;
     public float depth;
 
-
+    public bool endState = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +26,15 @@ public class PlayerMovement : MonoBehaviour
         {
             QuitGame();
         }
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
-        depth = Input.GetAxis("Depth");
-        transform.Translate( new Vector3(0, playerVerticalSpeed * Time.deltaTime * vertical, playerSpeed * Time.deltaTime * depth));
+        if (endState == false)
+        {
+            horizontal = Input.GetAxis("Horizontal");
+            vertical = Input.GetAxis("Vertical");
+            depth = Input.GetAxis("Depth");
+            transform.Translate(new Vector3(0, playerVerticalSpeed * Time.deltaTime * vertical, playerSpeed * Time.deltaTime * depth));
 
-        transform.Rotate(Vector3.up, horizontal * rotateSpeed * Time.deltaTime);
-
+            transform.Rotate(Vector3.up, horizontal * rotateSpeed * Time.deltaTime);
+        }
     }
 
     public void QuitGame()

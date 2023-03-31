@@ -13,6 +13,11 @@ public class PlayerHealth : MonoBehaviour
     public GameObject endingScreen;
     public GameObject winScreen;
     public GameObject gameUI;
+    public GameObject playerMovementObject;
+    public GameObject playerCameraObject;
+    public GameObject cannonObject;
+    public GameObject sideCannonObjectRight;
+    public GameObject sideCannonObjectLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
             //we're dead
             gameUI.SetActive(false);
             endingScreen.SetActive(true);
+            //Cursor.lockState = CursorLockMode.None;
             //spawn death explosion here, before destroying
 
             Destroy(transform.root.gameObject);
@@ -49,6 +55,12 @@ public class PlayerHealth : MonoBehaviour
         {
             gameUI.SetActive(false);
             winScreen.SetActive(true);
+            // Cursor.lockState = CursorLockMode.None;
+            playerMovementObject.GetComponent<PlayerMovement>().endState = true;
+            playerCameraObject.GetComponent<Camera2LookAround>().endState = true;
+            sideCannonObjectRight.GetComponent<SideCannon>().endState = true;
+            sideCannonObjectLeft.GetComponent<SideCannon>().endState = true;
+            cannonObject.GetComponent<CannonMouseaim>().endState = true;
         }
     }
 
