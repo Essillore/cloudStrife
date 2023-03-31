@@ -92,12 +92,7 @@ public class MediumEnemyMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(enemyShootCD);
         enemyCanFire = true;
-    }
-
-
-
-
-        
+    } 
 
 public void Shoot()
     {
@@ -106,19 +101,4 @@ public void Shoot()
         GameObject enemyBullet = Instantiate(enemyBulletPrefab, enemyCannonLocation.transform.position, enemyCannonLocation.transform.rotation);
         enemyBullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(50);
-
-                Destroy(gameObject);
-            }
-        }
-    }
-
 }

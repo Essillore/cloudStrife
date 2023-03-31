@@ -50,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 80
   currentHealth: 0
+  pickUp: {fileID: 2658351218379116291, guid: c6b4254d23bab754584af31c567bbddd, type: 3}
+  explosion: {fileID: 8526938655561682765, guid: 4017a6fe138e3564da5e87d46e4133b7, type: 3}
 --- !u!54 &5227551205222046452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,6 +95,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 80
   aggroRange: 200
+  pickUp: {fileID: 2658351218379116291, guid: c6b4254d23bab754584af31c567bbddd, type: 3}
+  explosion: {fileID: 8526938655561682765, guid: 4017a6fe138e3564da5e87d46e4133b7, type: 3}
 --- !u!1001 &1422651776608705884
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,6 +18,9 @@ public class KamikazeMovement : MonoBehaviour
     int kamikazeDamage = 30;
 
 
+    public GameObject pickUp;
+    public GameObject explosion;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +78,12 @@ public class KamikazeMovement : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(kamikazeDamage);
+
+                //Explosion
+                Instantiate(explosion, transform.position, transform.rotation);
+
+                //PickUp
+                Instantiate(pickUp, transform.position, transform.rotation);
 
                 Destroy(gameObject);
             }

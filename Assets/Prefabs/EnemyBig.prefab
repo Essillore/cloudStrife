@@ -285,3 +285,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 600
   currentHealth: 0
+  pickUp: {fileID: 5552536463531953382, guid: 1b70dd9d44f9c8146bbb495d13917246, type: 3}
+  explosion: {fileID: 8526938655561682765, guid: 4017a6fe138e3564da5e87d46e4133b7, type: 3}
