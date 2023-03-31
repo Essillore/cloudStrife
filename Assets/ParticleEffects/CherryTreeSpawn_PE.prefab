@@ -748,7 +748,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 2
     radius:
-      value: 15.849077
+      value: 10.970705
       mode: 0
       spread: 0
       speed:
@@ -4981,7 +4981,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 21.918531
+      scalar: 4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5097,7 +5097,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 20
+      scalar: 4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9967,7 +9967,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 30
+      scalar: 18
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14837,7 +14837,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 30
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -19431,6 +19431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8601662082739273371}
+  - component: {fileID: 5671592265471879016}
   m_Layer: 0
   m_Name: CherryTreeSpawn_PE
   m_TagString: Untagged
@@ -19454,6 +19455,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5671592265471879016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683325915745596882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74bac46cf08924ca179a032f7631db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyCounter: 4
 --- !u!1 &8933795964287956397
 GameObject:
   m_ObjectHideFlags: 0
@@ -19480,7 +19494,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8933795964287956397}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 13.9, z: 0}
+  m_LocalPosition: {x: 0, y: 10.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19739,7 +19753,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 19
+      scalar: 16
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -20202,7 +20216,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 16.533443
+      value: 12.801561
       mode: 0
       spread: 0
       speed:
