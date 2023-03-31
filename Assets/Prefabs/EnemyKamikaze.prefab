@@ -95,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 80
   aggroRange: 200
+  explosion: {fileID: 8526938655561682765, guid: 4017a6fe138e3564da5e87d46e4133b7, type: 3}
 --- !u!1001 &1422651776608705884
 PrefabInstance:
   m_ObjectHideFlags: 0
