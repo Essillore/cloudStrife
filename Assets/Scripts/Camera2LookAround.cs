@@ -13,7 +13,7 @@ public class Camera2LookAround : MonoBehaviour
     public float orbitDamping = 10f;
 
     // Define the distance from the airship for the camera to rotate around
-    public float distanceFromAirship = 20.0f;
+    public float distanceFromAirship = 50.0f;
 
     // Define the constant height of the camera relative to the airship
     public float cameraHeight = 2.0f;

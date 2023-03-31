@@ -17,10 +17,6 @@ public class KamikazeMovement : MonoBehaviour
 
     int kamikazeDamage = 30;
 
-
-    public GameObject pickUp;
-    public GameObject explosion;
-
     // Start is called before the first frame update
     void Start()
     {
