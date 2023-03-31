@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d43050843f25248a6b0d67547f2397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyer: {fileID: 5227551205222046411, guid: d28bc14788542f94b941011e929181e1, type: 3}
+  flyer: {fileID: 3281632265407934807, guid: a9f51408d8e91c9469c8528d78c96273, type: 3}
   spawnTimer: 3
   enemySpeed: 0
   aggroRange: 200
