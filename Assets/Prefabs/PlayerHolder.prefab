@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1371093795570500724}
   - component: {fileID: 3616483053763520188}
   - component: {fileID: 1711832061}
+  - component: {fileID: 4212449378885518660}
   m_Layer: 0
   m_Name: PlayerColliderHealth
   m_TagString: Player
@@ -156,6 +157,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.660036, y: 0.9699042, z: 1.403847}
   m_Center: {x: 0.08364836, y: -1.033271, z: 0.2894192}
+--- !u!114 &4212449378885518660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2232671608193104484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b8ba31945c07143adae79aae65e355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 0}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &4105736264098306026
 GameObject:
   m_ObjectHideFlags: 0

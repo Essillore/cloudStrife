@@ -22,7 +22,6 @@ public class Camera2LookAround : MonoBehaviour
 
     public bool endState = false;
 
-
     // Start is called before the first frame update
     void Start()
     {

@@ -19,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
     public GameObject sideCannonObjectRight;
     public GameObject sideCannonObjectLeft;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
@@ -39,8 +38,6 @@ public class PlayerHealth : MonoBehaviour
 
             Destroy(transform.root.gameObject);
         }
-
-
     }
 
 
@@ -84,6 +81,6 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-
+    
 
 }
