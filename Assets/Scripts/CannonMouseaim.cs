@@ -9,37 +9,41 @@ public class CannonMouseaim : MonoBehaviour
     public Camera myCamera;
     public PlayerHealth playerHealth;
 
+    public bool endState = false;
+
     // Update is called once per frame
     void Update()
     {
-     //   Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.yellow);
-
-        if (Input.GetButtonDown("Fire1") && playerHealth.currentHealth > 1)
+        //   Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.yellow);
+        if (endState == false)
         {
-            int layerMask = 1 << 7;
-            Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
-            // RaycastHit hit;
+           
+               // int layerMask = 1 << 7;
+                Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
+                // RaycastHit hit;
 
-            Vector3 direction = ray.direction;
+                Vector3 direction = ray.direction;
 
-            /*if (Physics.Raycast(ray, out hit, Mathf.Infinity,layerMask))
-            {
-                transform.LookAt(hit.point);
-            }*/
-            Quaternion rotation = Quaternion.LookRotation(direction);
-            transform.rotation = rotation;
+                /*if (Physics.Raycast(ray, out hit, Mathf.Infinity,layerMask))
+                {
+                    transform.LookAt(hit.point);
+                }*/
+                Quaternion rotation = Quaternion.LookRotation(direction);
+                transform.rotation = rotation;
+                 if (Input.GetButtonDown("Fire1") && playerHealth.currentHealth > 1)
+                            {
+                playerHealth.TakeDamage(1);
 
-            playerHealth.TakeDamage(1);
+                GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
+                projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
 
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
-            
-            /*if (hit.transform.CompareTag("Enemy"))
-            {
-                Destroy(hit.transform.gameObject);
+                /*if (hit.transform.CompareTag("Enemy"))
+                {
+                    Destroy(hit.transform.gameObject);
+                }
+                */
+
             }
-            */
-
         }
 
     }

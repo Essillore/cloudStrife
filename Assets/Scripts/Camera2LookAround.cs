@@ -20,6 +20,8 @@ public class Camera2LookAround : MonoBehaviour
 
     public float movementSmoothing = 0.1f;
 
+    public bool endState = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -46,13 +48,17 @@ public class Camera2LookAround : MonoBehaviour
         distanceFromAirship * -Mathf.Cos(rotationY * Mathf.Deg2Rad) * Mathf.Cos(rotationX * Mathf.Deg2Rad)
         );
 
-        // Update the position of the camera relative to the airship
-       // transform.position = target.transform.position + cameraPosition;
+        if (endState == false)
+        {
 
-        // Smooth camera movement towards target position
-        transform.position = Vector3.Lerp(transform.position, target.transform.position + cameraPosition, movementSmoothing);
+            // Update the position of the camera relative to the airship
+            // transform.position = target.transform.position + cameraPosition;
 
-        Quaternion QT = Quaternion.Euler(rotationX, rotationY, 0f);
-        transform.rotation = Quaternion.Lerp(transform.rotation, QT, Time.deltaTime * orbitDamping);
+            // Smooth camera movement towards target position
+            transform.position = Vector3.Lerp(transform.position, target.transform.position + cameraPosition, movementSmoothing);
+
+            Quaternion QT = Quaternion.Euler(rotationX, rotationY, 0f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, QT, Time.deltaTime * orbitDamping);
+        }
     }
 }

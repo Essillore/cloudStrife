@@ -11,7 +11,7 @@ public class SideCannon : MonoBehaviour
     public float abilityCooldown;
     private bool canFire = true;
 
-
+    public bool endState = false;
 
     void Start()
     {
@@ -20,21 +20,23 @@ public class SideCannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("Fire2") && canFire==true)
+        if (endState == false)
         {
-            canFire = false;
-            GameObject projectile = Instantiate(sideProjectilePrefab, transform.position, transform.rotation);
-            projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
-
-            StartCoroutine(Cooldown());
-
-            /*if (hit.transform.CompareTag("Enemy"))
+            if (Input.GetButtonDown("Fire2") && canFire == true)
             {
-                Destroy(hit.transform.gameObject);
-            }
-            */
+                canFire = false;
+                GameObject projectile = Instantiate(sideProjectilePrefab, transform.position, transform.rotation);
+                projectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
 
+                StartCoroutine(Cooldown());
+
+                /*if (hit.transform.CompareTag("Enemy"))
+                {
+                    Destroy(hit.transform.gameObject);
+                }
+                */
+
+            }
         }
     }
     IEnumerator Cooldown()
