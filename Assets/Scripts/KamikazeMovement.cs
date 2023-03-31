@@ -79,13 +79,16 @@ public class KamikazeMovement : MonoBehaviour
             {
                 playerHealth.TakeDamage(kamikazeDamage);
 
-                //Explosion
-                Instantiate(explosion, transform.position, transform.rotation);
+                GetComponent<EnemyHealth>().TakeDamage(200);
+
+                /* Explosion
+                *Instantiate(explosion, transform.position, transform.rotation);
 
                 //PickUp
                 Instantiate(pickUp, transform.position, transform.rotation);
-
+                
                 Destroy(gameObject);
+                */
             }
         }
     }
