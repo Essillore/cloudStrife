@@ -18263,6 +18263,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1107076365113045645, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+      propertyPath: m_Volume
+      value: 0.885
+      objectReference: {fileID: 0}
     - target: {fileID: 2641223825174224386, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
       propertyPath: gameUI
       value: 
@@ -18362,6 +18366,14 @@ PrefabInstance:
     - target: {fileID: 3334926819379305340, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919970758461083567, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+      propertyPath: m_Pitch
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919970758461083567, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
+      propertyPath: m_Volume
+      value: 0.259
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ccddd48347c2f3419136b9e9bfd3a19, type: 3}
