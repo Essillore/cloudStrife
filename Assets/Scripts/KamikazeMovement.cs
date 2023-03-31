@@ -17,6 +17,8 @@ public class KamikazeMovement : MonoBehaviour
 
     int kamikazeDamage = 30;
 
+    public GameObject explosion;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,15 +77,19 @@ public class KamikazeMovement : MonoBehaviour
             {
                 playerHealth.TakeDamage(kamikazeDamage);
 
-                GetComponent<EnemyHealth>().TakeDamage(200);
+                Instantiate(explosion, transform.position, transform.rotation);
+
+                Destroy(gameObject);
+
+                // GetComponent<EnemyHealth>().TakeDamage(200);
 
                 /* Explosion
-                *Instantiate(explosion, transform.position, transform.rotation);
+                
 
                 //PickUp
                 Instantiate(pickUp, transform.position, transform.rotation);
                 
-                Destroy(gameObject);
+
                 */
             }
         }
