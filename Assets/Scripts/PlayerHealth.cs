@@ -66,11 +66,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown("k"))
+       /* if (Input.GetKeyDown("k"))
         {
             // if (unbroken == true) { spireHealth -= 10f; }
             seededSpires = 18;
-        }
+        }*/
     }
 
 
