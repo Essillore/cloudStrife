@@ -9,6 +9,7 @@ public class MouseCursor : MonoBehaviour
     public Vector2 hotSpot = Vector2.zero;
     void OnMouseEnter()
     {
+        hotSpot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
     }
 
