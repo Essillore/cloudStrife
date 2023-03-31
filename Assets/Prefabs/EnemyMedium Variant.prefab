@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5697541086843184994, guid: 651b8ce065106a64faf8501f84cef5a3, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 9104910972896816002, guid: 651b8ce065106a64faf8501f84cef5a3, type: 3}
       propertyPath: m_Name
-      value: EnemyMedium
+      value: EnemyMedium Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9104910972896816002, guid: 651b8ce065106a64faf8501f84cef5a3, type: 3}
       propertyPath: m_TagString
@@ -61,3 +65,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 651b8ce065106a64faf8501f84cef5a3, type: 3}
+--- !u!1 &3615225938211063583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9104910972896816002, guid: 651b8ce065106a64faf8501f84cef5a3, type: 3}
+  m_PrefabInstance: {fileID: 5508175693689351325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &8593882329854588118
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615225938211063583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.81
+  m_Height: 7.62
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.6715617, z: 0}

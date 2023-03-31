@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9104910972896816013}
   - component: {fileID: 9104910972896816003}
   - component: {fileID: 5556706741876107363}
+  - component: {fileID: 435532992150656412}
   m_Layer: 0
   m_Name: EnemyBig
   m_TagString: Enemy
@@ -67,6 +68,20 @@ MonoBehaviour:
   spawnTimer: 3
   enemySpeed: 0
   aggroRange: 200
+--- !u!136 &435532992150656412
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9104910972896816002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.81
+  m_Height: 7.62
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.6715617, z: 0}
 --- !u!1001 &2454651822394602593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ebd4c88d2076b4ca6451d3cf13fdd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 600
+  maxHealth: 400
   currentHealth: 0
   pickUp: {fileID: 5552536463531953382, guid: 1b70dd9d44f9c8146bbb495d13917246, type: 3}
   explosion: {fileID: 8526938655561682765, guid: 4017a6fe138e3564da5e87d46e4133b7, type: 3}
